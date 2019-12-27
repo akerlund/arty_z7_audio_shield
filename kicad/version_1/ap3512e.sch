@@ -1,0 +1,209 @@
+EESchema Schematic File Version 4
+LIBS:fpga_pedal-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 14
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L freakuency:AP3512 U8
+U 1 1 5D174474
+P 5850 3750
+F 0 "U8" H 5850 3250 50  0000 C CNN
+F 1 "AP3512" H 5850 4250 50  0000 C CNN
+F 2 "w_smd_dil:so-8" H 5850 3750 50  0001 C CNN
+F 3 "" H 5850 3750 50  0001 C CNN
+	1    5850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C47
+U 1 1 5D174A5C
+P 6400 3500
+F 0 "C47" H 6478 3521 50  0000 L CNN
+F 1 "10nF" H 6478 3430 50  0000 L CNN
+F 2 "w_smd_cap:c_0603" H 6400 3500 60  0001 C CNN
+F 3 "" H 6400 3500 60  0000 C CNN
+	1    6400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5D17531E
+P 5300 3500
+F 0 "R9" H 5200 3500 50  0000 C CNN
+F 1 "100k" H 5450 3500 50  0000 C CNN
+F 2 "w_smd_resistors:r_0603" H 5300 3500 60  0001 C CNN
+F 3 "" H 5300 3500 60  0000 C CNN
+	1    5300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C44
+U 1 1 5D176260
+P 5000 3500
+F 0 "C44" H 4600 3500 50  0000 C CNN
+F 1 "10uF" H 4800 3500 50  0000 C CNN
+F 2 "w_smd_cap:c_elec_5x4.5" H 5000 3500 50  0001 C CNN
+F 3 "~" H 5000 3500 50  0001 C CNN
+	1    5000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:INDUCTOR L3
+U 1 1 5D178D7C
+P 6850 3650
+F 0 "L3" V 7017 3650 40  0000 C CNN
+F 1 "4.7uH" V 6941 3650 40  0000 C CNN
+F 2 "Inductor_SMD:L_Coilcraft_LPS4018" H 6850 3650 60  0001 C CNN
+F 3 "" H 6850 3650 60  0000 C CNN
+	1    6850 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP_Small C48
+U 1 1 5D17B370
+P 7150 3750
+F 0 "C48" H 7238 3796 50  0000 L CNN
+F 1 "22uF" H 7238 3705 50  0000 L CNN
+F 2 "w_smd_cap:c_elec_5x4.5" H 7150 3750 50  0001 C CNN
+F 3 "~" H 7150 3750 50  0001 C CNN
+	1    7150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C45
+U 1 1 5D182633
+P 5250 3800
+F 0 "C45" V 5250 3150 50  0000 C CNN
+F 1 "0.1uF" V 5250 3350 50  0000 C CNN
+F 2 "w_smd_cap:c_0603" H 5250 3800 60  0001 C CNN
+F 3 "" H 5250 3800 60  0000 C CNN
+	1    5250 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C46
+U 1 1 5D1868E5
+P 5250 3950
+F 0 "C46" V 5250 3300 50  0000 C CNN
+F 1 "3.3nF" V 5250 3500 50  0000 C CNN
+F 2 "w_smd_cap:c_0603" H 5250 3950 60  0001 C CNN
+F 3 "" H 5250 3950 60  0000 C CNN
+	1    5250 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5D189750
+P 6400 3800
+F 0 "R10" H 6500 3800 50  0000 C CNN
+F 1 "26.1k" H 6700 3800 50  0000 C CNN
+F 2 "w_smd_resistors:r_0603" H 6400 3800 60  0001 C CNN
+F 3 "" H 6400 3800 60  0000 C CNN
+	1    6400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5D18B410
+P 6400 4100
+F 0 "R11" H 6500 4100 50  0000 C CNN
+F 1 "10k" H 6700 4100 50  0000 C CNN
+F 2 "w_smd_resistors:r_0603" H 6400 4100 60  0001 C CNN
+F 3 "" H 6400 4100 60  0000 C CNN
+	1    6400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3400 5500 3400
+Wire Wire Line
+	5300 3650 5500 3650
+Wire Wire Line
+	5500 3800 5300 3800
+Wire Wire Line
+	5300 3950 5500 3950
+Wire Wire Line
+	5150 3950 5100 3950
+Wire Wire Line
+	5100 4350 5500 4350
+Wire Wire Line
+	6400 4350 6400 4200
+Wire Wire Line
+	6200 3900 6400 3900
+Wire Wire Line
+	6400 4000 6400 3900
+Connection ~ 6400 3900
+Wire Wire Line
+	6200 3650 6400 3650
+Wire Wire Line
+	6400 3600 6400 3650
+Connection ~ 6400 3650
+Wire Wire Line
+	6400 3650 6700 3650
+Wire Wire Line
+	6400 3700 6400 3650
+Wire Wire Line
+	6200 3400 6400 3400
+Wire Wire Line
+	6400 3400 6400 3450
+Wire Wire Line
+	7000 3650 7150 3650
+Wire Wire Line
+	7150 3850 7150 4350
+Wire Wire Line
+	7150 4350 6400 4350
+Connection ~ 6400 4350
+Text HLabel 5000 4350 0    50   Input ~ 0
+GND
+Text HLabel 5000 3400 1    50   Input ~ 0
+VIN
+Text HLabel 7150 3650 1    50   Input ~ 0
+3.3V
+$Comp
+L Device:R R8
+U 1 1 5D196305
+P 5100 4150
+F 0 "R8" H 5200 4150 50  0000 C CNN
+F 1 "10k" H 5250 4050 50  0000 C CNN
+F 2 "w_smd_resistors:r_0603" H 5100 4150 60  0001 C CNN
+F 3 "" H 5100 4150 60  0000 C CNN
+	1    5100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3950 5100 4050
+Wire Wire Line
+	5100 4250 5100 4350
+Wire Wire Line
+	5000 3800 5000 4350
+Wire Wire Line
+	5000 4350 5100 4350
+Connection ~ 5100 4350
+Wire Wire Line
+	5000 3800 5150 3800
+Wire Wire Line
+	5000 3400 5300 3400
+Connection ~ 5300 3400
+Wire Wire Line
+	5300 3600 5300 3650
+Connection ~ 5000 3800
+Wire Wire Line
+	5000 3600 5000 3800
+Wire Wire Line
+	5500 4100 5500 4350
+Connection ~ 5500 4350
+Wire Wire Line
+	5500 4350 6400 4350
+Text Notes 1000 1500 0    236  ~ 0
+Diodes Inc AP3512E\n18V, 2A SYNCHRONOUS DC-DC BUCK CONVERTER
+$EndSCHEMATC
